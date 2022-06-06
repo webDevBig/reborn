@@ -1,0 +1,126 @@
+header h1 .span1,
+header h1 .span2 {
+    animation: none;
+}
+
+header h1::after {
+    display: none;
+}
+
+
+
+/*step1 style*/
+.step1 {
+    /*    width: 100%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.step1 .text {
+    position: absolute;
+    padding: 18px 0 0 8px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gifs_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 212px;
+    height: 176px;
+    position: relative;
+}
+
+.gifs_box .bottle {
+    max-width: 340px;
+    position: absolute;
+    top: -9px;
+    left: -62px;
+}
+
+.gifs_box .arrow {
+    max-width: 354px;
+    position: absolute;
+    top: -9px;
+    left: -6px;
+
+}
+
+.gifs_box .slot {
+    max-width: 312px;
+    position: absolute;
+    right: -97px;
+    top: -39px;
+}
+
+.step1 .btn {
+    position: relative;
+    z-index: 10;
+}
+
+
+
+
+/*step2 style*/
+.step2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.step2.hide {
+    display: none;
+}
+
+.step2 .recycle-logo {
+    max-width: 180px;
+    margin: -40px 0 -30px;
+}
+
+/*step3 style*/
+.step3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.step3.hide {
+    display: none;
+}
+
+.step3 .check {
+    max-width: 180px;
+    margin: -40px 0 -30px 10px;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes opacity_reverse {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
